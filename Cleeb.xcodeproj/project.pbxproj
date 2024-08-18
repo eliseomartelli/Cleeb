@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		558DBB1A2C6FEE0300E2E9B5 /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558DBB192C6FEE0300E2E9B5 /* PermissionView.swift */; };
+		5530D4932C722F480012AAFB /* AccessibilityUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5530D4922C722F480012AAFB /* AccessibilityUtils.swift */; };
+		5530D4962C72312B0012AAFB /* EventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5530D4952C72312B0012AAFB /* EventListener.swift */; };
+		554403F22C71DAED00CFF00D /* View+alwaysOnTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554403F12C71DAED00CFF00D /* View+alwaysOnTop.swift */; };
+		554403F42C7228D600CFF00D /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554403F32C7228D600CFF00D /* Accessibility.swift */; };
 		55FA934D2C6FE9C70037AC12 /* CleebApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA934C2C6FE9C70037AC12 /* CleebApp.swift */; };
 		55FA934F2C6FE9C70037AC12 /* CleebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA934E2C6FE9C70037AC12 /* CleebView.swift */; };
 		55FA93512C6FE9C70037AC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FA93502C6FE9C70037AC12 /* Assets.xcassets */; };
 		55FA93542C6FE9C70037AC12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FA93532C6FE9C70037AC12 /* Preview Assets.xcassets */; };
 		55FA935C2C6FE9E50037AC12 /* CleebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA935B2C6FE9E50037AC12 /* CleebViewModel.swift */; };
-		55FA935E2C6FEA580037AC12 /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA935D2C6FEA580037AC12 /* Accessibility.swift */; };
+		55FA935E2C6FEA580037AC12 /* View+checkAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA935D2C6FEA580037AC12 /* View+checkAccessibility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		558DBB192C6FEE0300E2E9B5 /* PermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionView.swift; sourceTree = "<group>"; };
+		5530D4922C722F480012AAFB /* AccessibilityUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityUtils.swift; sourceTree = "<group>"; };
+		5530D4952C72312B0012AAFB /* EventListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListener.swift; sourceTree = "<group>"; };
+		554403F12C71DAED00CFF00D /* View+alwaysOnTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+alwaysOnTop.swift"; sourceTree = "<group>"; };
+		554403F32C7228D600CFF00D /* Accessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessibility.swift; sourceTree = "<group>"; };
 		55FA93492C6FE9C70037AC12 /* Cleeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cleeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FA934C2C6FE9C70037AC12 /* CleebApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleebApp.swift; sourceTree = "<group>"; };
 		55FA934E2C6FE9C70037AC12 /* CleebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleebView.swift; sourceTree = "<group>"; };
@@ -25,7 +31,7 @@
 		55FA93532C6FE9C70037AC12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		55FA93552C6FE9C70037AC12 /* Cleeb.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cleeb.entitlements; sourceTree = "<group>"; };
 		55FA935B2C6FE9E50037AC12 /* CleebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleebViewModel.swift; sourceTree = "<group>"; };
-		55FA935D2C6FEA580037AC12 /* Accessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessibility.swift; sourceTree = "<group>"; };
+		55FA935D2C6FEA580037AC12 /* View+checkAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+checkAccessibility.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5530D4942C7231060012AAFB /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				5530D4952C72312B0012AAFB /* EventListener.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		554403F72C722EDE00CFF00D /* Accessibility */ = {
+			isa = PBXGroup;
+			children = (
+				55FA935D2C6FEA580037AC12 /* View+checkAccessibility.swift */,
+				5530D4922C722F480012AAFB /* AccessibilityUtils.swift */,
+				554403F32C7228D600CFF00D /* Accessibility.swift */,
+			);
+			path = Accessibility;
+			sourceTree = "<group>";
+		};
 		55FA93402C6FE9C70037AC12 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +82,12 @@
 		55FA934B2C6FE9C70037AC12 /* Cleeb */ = {
 			isa = PBXGroup;
 			children = (
+				554403F12C71DAED00CFF00D /* View+alwaysOnTop.swift */,
+				5530D4942C7231060012AAFB /* Event */,
+				554403F72C722EDE00CFF00D /* Accessibility */,
 				55FA934C2C6FE9C70037AC12 /* CleebApp.swift */,
-				558DBB192C6FEE0300E2E9B5 /* PermissionView.swift */,
 				55FA934E2C6FE9C70037AC12 /* CleebView.swift */,
 				55FA935B2C6FE9E50037AC12 /* CleebViewModel.swift */,
-				55FA935D2C6FEA580037AC12 /* Accessibility.swift */,
 				55FA93502C6FE9C70037AC12 /* Assets.xcassets */,
 				55FA93552C6FE9C70037AC12 /* Cleeb.entitlements */,
 				55FA93522C6FE9C70037AC12 /* Preview Content */,
@@ -148,10 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				558DBB1A2C6FEE0300E2E9B5 /* PermissionView.swift in Sources */,
 				55FA934F2C6FE9C70037AC12 /* CleebView.swift in Sources */,
+				554403F42C7228D600CFF00D /* Accessibility.swift in Sources */,
 				55FA934D2C6FE9C70037AC12 /* CleebApp.swift in Sources */,
-				55FA935E2C6FEA580037AC12 /* Accessibility.swift in Sources */,
+				5530D4962C72312B0012AAFB /* EventListener.swift in Sources */,
+				5530D4932C722F480012AAFB /* AccessibilityUtils.swift in Sources */,
+				554403F22C71DAED00CFF00D /* View+alwaysOnTop.swift in Sources */,
+				55FA935E2C6FEA580037AC12 /* View+checkAccessibility.swift in Sources */,
 				55FA935C2C6FE9E50037AC12 /* CleebViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Cleeb/Cleeb.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -310,6 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Cleeb/Cleeb.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
