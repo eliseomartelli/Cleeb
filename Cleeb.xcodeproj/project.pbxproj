@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		558DBB1A2C6FEE0300E2E9B5 /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558DBB192C6FEE0300E2E9B5 /* PermissionView.swift */; };
+		55FA934D2C6FE9C70037AC12 /* CleebApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA934C2C6FE9C70037AC12 /* CleebApp.swift */; };
+		55FA934F2C6FE9C70037AC12 /* CleebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA934E2C6FE9C70037AC12 /* CleebView.swift */; };
+		55FA93512C6FE9C70037AC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FA93502C6FE9C70037AC12 /* Assets.xcassets */; };
+		55FA93542C6FE9C70037AC12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FA93532C6FE9C70037AC12 /* Preview Assets.xcassets */; };
+		55FA935C2C6FE9E50037AC12 /* CleebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA935B2C6FE9E50037AC12 /* CleebViewModel.swift */; };
+		55FA935E2C6FEA580037AC12 /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA935D2C6FEA580037AC12 /* Accessibility.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		558DBB192C6FEE0300E2E9B5 /* PermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionView.swift; sourceTree = "<group>"; };
+		55FA93492C6FE9C70037AC12 /* Cleeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cleeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55FA934C2C6FE9C70037AC12 /* CleebApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleebApp.swift; sourceTree = "<group>"; };
+		55FA934E2C6FE9C70037AC12 /* CleebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleebView.swift; sourceTree = "<group>"; };
+		55FA93502C6FE9C70037AC12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55FA93532C6FE9C70037AC12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		55FA93552C6FE9C70037AC12 /* Cleeb.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cleeb.entitlements; sourceTree = "<group>"; };
+		55FA935B2C6FE9E50037AC12 /* CleebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleebViewModel.swift; sourceTree = "<group>"; };
+		55FA935D2C6FEA580037AC12 /* Accessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessibility.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55FA93462C6FE9C70037AC12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55FA93402C6FE9C70037AC12 = {
+			isa = PBXGroup;
+			children = (
+				55FA934B2C6FE9C70037AC12 /* Cleeb */,
+				55FA934A2C6FE9C70037AC12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55FA934A2C6FE9C70037AC12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55FA93492C6FE9C70037AC12 /* Cleeb.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55FA934B2C6FE9C70037AC12 /* Cleeb */ = {
+			isa = PBXGroup;
+			children = (
+				55FA934C2C6FE9C70037AC12 /* CleebApp.swift */,
+				558DBB192C6FEE0300E2E9B5 /* PermissionView.swift */,
+				55FA934E2C6FE9C70037AC12 /* CleebView.swift */,
+				55FA935B2C6FE9E50037AC12 /* CleebViewModel.swift */,
+				55FA935D2C6FEA580037AC12 /* Accessibility.swift */,
+				55FA93502C6FE9C70037AC12 /* Assets.xcassets */,
+				55FA93552C6FE9C70037AC12 /* Cleeb.entitlements */,
+				55FA93522C6FE9C70037AC12 /* Preview Content */,
+			);
+			path = Cleeb;
+			sourceTree = "<group>";
+		};
+		55FA93522C6FE9C70037AC12 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				55FA93532C6FE9C70037AC12 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55FA93482C6FE9C70037AC12 /* Cleeb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55FA93582C6FE9C70037AC12 /* Build configuration list for PBXNativeTarget "Cleeb" */;
+			buildPhases = (
+				55FA93452C6FE9C70037AC12 /* Sources */,
+				55FA93462C6FE9C70037AC12 /* Frameworks */,
+				55FA93472C6FE9C70037AC12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cleeb;
+			productName = Cleeb;
+			productReference = 55FA93492C6FE9C70037AC12 /* Cleeb.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55FA93412C6FE9C70037AC12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					55FA93482C6FE9C70037AC12 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 55FA93442C6FE9C70037AC12 /* Build configuration list for PBXProject "Cleeb" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55FA93402C6FE9C70037AC12;
+			productRefGroup = 55FA934A2C6FE9C70037AC12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55FA93482C6FE9C70037AC12 /* Cleeb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55FA93472C6FE9C70037AC12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55FA93542C6FE9C70037AC12 /* Preview Assets.xcassets in Resources */,
+				55FA93512C6FE9C70037AC12 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55FA93452C6FE9C70037AC12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558DBB1A2C6FEE0300E2E9B5 /* PermissionView.swift in Sources */,
+				55FA934F2C6FE9C70037AC12 /* CleebView.swift in Sources */,
+				55FA934D2C6FE9C70037AC12 /* CleebApp.swift in Sources */,
+				55FA935E2C6FEA580037AC12 /* Accessibility.swift in Sources */,
+				55FA935C2C6FE9E50037AC12 /* CleebViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		55FA93562C6FE9C70037AC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55FA93572C6FE9C70037AC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		55FA93592C6FE9C70037AC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Cleeb/Cleeb.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Cleeb/Preview Content\"";
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.eliseomartelli.Cleeb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		55FA935A2C6FE9C70037AC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Cleeb/Cleeb.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Cleeb/Preview Content\"";
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.eliseomartelli.Cleeb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55FA93442C6FE9C70037AC12 /* Build configuration list for PBXProject "Cleeb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55FA93562C6FE9C70037AC12 /* Debug */,
+				55FA93572C6FE9C70037AC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55FA93582C6FE9C70037AC12 /* Build configuration list for PBXNativeTarget "Cleeb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55FA93592C6FE9C70037AC12 /* Debug */,
+				55FA935A2C6FE9C70037AC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55FA93412C6FE9C70037AC12 /* Project object */;
+}
