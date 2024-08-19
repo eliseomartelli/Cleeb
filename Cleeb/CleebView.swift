@@ -12,26 +12,25 @@ struct CleebView: View {
     var body: some View {
         VStack {
             if viewModel.isCleaningModeEnabled {
-                // TODO: refactor always on top to accept a binding to avoid using this hacky code.
                 ZStack{}.alwaysOnTop()
             }
-            VStack(alignment: .leading) {
-                VStack(alignment: .center) {
-                    Image(nsImage: NSImage(named: "AppIcon")!)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                    Toggle(isOn: $viewModel.isCleaningModeEnabled) {
-                        Text("Cleaning Mode")
-                    }
-                    .toggleStyle(.switch)
-                }
-                .frame(maxWidth: .infinity)
-                Spacer()
-                Text("Cleaning Mode disables all keyboard input, preventing you from typing anything until it is turned off.")
-                    .font(.subheadline)
+            Image(nsImage: NSImage(named: "AppIcon")!)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            Spacer()
+            Toggle(isOn: $viewModel.isCleaningModeEnabled) {
+                Text("Cleaning mode")
+                Text("""
+Cleaning mode disables all keyboard input, \
+preventing you from typing anything until it is turned off.
+""")
             }
+            .toggleStyle(.switch)
             .padding()
+            .background(Color.white)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .shadow(radius: 1)
+            .padding(.bottom)
         }
         .frame(width: 300, height: 300)
     }
