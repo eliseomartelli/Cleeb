@@ -7,8 +7,6 @@
 
 import Foundation
 import AppKit
-import Cocoa
-import Quartz
 
 @Observable
 class CleebViewModel {
@@ -22,8 +20,10 @@ class CleebViewModel {
         set {
             if newValue {
                 self.eventListenerModel.startListening()
+                _ = PreventSleep.disableSleep()
             } else {
                 self.eventListenerModel.stopListening()
+                _ = PreventSleep.enableSleep()
             }
             _isCleaningModeEnabled = newValue
         }

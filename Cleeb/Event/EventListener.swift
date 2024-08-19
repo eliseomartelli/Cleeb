@@ -14,8 +14,7 @@ class EventListener {
     
     init() {
         let eventMask = CGEventMask(
-            (1 << CGEventType.keyDown.rawValue) |
-            (1 << CGEventType.keyUp.rawValue)
+            (1 << CGEventType.keyDown.rawValue)
         )
         self.eventTap = CGEvent.tapCreate(
             tap: .cghidEventTap,
