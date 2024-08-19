@@ -11,12 +11,14 @@ import AppKit
 @main
 struct CleebApp: App {
     @State var isPermitted: Bool = true
+    @State var showAlert: Bool = false
+    
     var body: some Scene {
         WindowGroup {
             ZStack {
                 CleebView()
             }
-            .alert(isPresented: !$isPermitted, content: {
+            .alert(isPresented: $showAlert, content: {
                 Alert(
                     title: Text("Cleeb requires Accessibility Permissions"),
                     message: Text("""
@@ -39,6 +41,11 @@ sure Cleeb has Accessibility Permissions.
             .onAppear {
                 NSWindow.allowsAutomaticWindowTabbing = false
             }
+            .onChange(of: isPermitted) {
+                if !isPermitted && !showAlert {
+                    showAlert = true
+                }
+            }
         }
         .commands {
             CommandGroup(replacing: .newItem) {
@@ -46,11 +53,4 @@ sure Cleeb has Accessibility Permissions.
         }
         .windowResizability(.contentSize)
     }
-}
-
-prefix func ! (value: Binding<Bool>) -> Binding<Bool> {
-    Binding<Bool>(
-        get: { !value.wrappedValue },
-        set: { value.wrappedValue = !$0 }
-    )
 }
