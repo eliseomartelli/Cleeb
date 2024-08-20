@@ -37,7 +37,9 @@ class EventListener {
             kCFAllocatorDefault,
             /* port: */
             eventTap,
-            /* order: */
+            // This value is currently ignored by CFMachPort run loop sources.
+            // And eventTap type is CFMachPort.
+            // I'm passing 0 according to the documentation.
             0
         )
         CFRunLoopAddSource(CFRunLoopGetCurrent(), runLoopSource, .commonModes)
