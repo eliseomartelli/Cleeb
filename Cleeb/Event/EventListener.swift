@@ -14,8 +14,8 @@ class EventListener {
     
     init() {
         let eventMask = CGEventMask(
-            (1 << CGEventType.keyDown.rawValue) |
-            (1 << CGEventType.keyUp.rawValue) |
+            (1 << NX_KEYUP) |
+            (1 << NX_KEYDOWN) |
             (1 << NX_SYSDEFINED) // Should caputer media hotkeys.
         )
         self.eventTap = CGEvent.tapCreate(
