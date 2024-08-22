@@ -1,0 +1,76 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Cleaning mode" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modalità Pulizia"
+          }
+        }
+      }
+    },
+    "Cleaning mode disables all keyboard input, preventing you from typing anything until it is turned off." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La Modalità pulizia disabiliterà tutti gli input provenienti dalla tastiera."
+          }
+        }
+      }
+    },
+    "Cleeb" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cleeb"
+          }
+        }
+      }
+    },
+    "Cleeb needs to access Accessibility API in order to lock the keyboard while cleaning.\nPlease open System Preferences > Security & Privacy > Accessibility and make sure Cleeb has Accessibility Permissions." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cleeb ha bisogno dei permessi di Accessibilità per poter bloccare il funzionamento della tastiera durante la pulizia.\nApri Impostazioni > Sicurezza e Privacy > Accessibilità e assicurati che Cleeb abbia i permessi di Accessibilità."
+          }
+        }
+      }
+    },
+    "Cleeb requires Accessibility Permissions" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cleeb ha bisogno dei permessi di Accessibilità"
+          }
+        }
+      }
+    },
+    "Dismiss" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiudi"
+          }
+        }
+      }
+    },
+    "Open Settings" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri le Impostazioni"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
