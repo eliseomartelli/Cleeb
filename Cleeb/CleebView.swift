@@ -27,7 +27,7 @@ preventing you from typing anything until it is turned off.
             }
             .toggleStyle(.switch)
             .padding()
-            .background(Color.white)
+            .background(.background.secondary)
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .shadow(radius: 1)
             .padding(.bottom)
@@ -36,6 +36,10 @@ preventing you from typing anything until it is turned off.
     }
 }
 
-#Preview {
+#Preview() {
+    CleebView()
+        .environment(\.locale, .init(identifier: "it"))
+}
+#Preview() {
     CleebView()
 }
