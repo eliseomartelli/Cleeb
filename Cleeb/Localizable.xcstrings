@@ -8,6 +8,12 @@
             "state" : "translated",
             "value" : "Modalità Pulizia"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清洁模式"
+          }
         }
       }
     },
@@ -18,12 +24,24 @@
             "state" : "translated",
             "value" : "La Modalità pulizia disabiliterà tutti gli input provenienti dalla tastiera."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清洁模式将禁止所有键盘输入，直到关闭前，您都将无法输入任何内容。"
+          }
         }
       }
     },
     "Cleeb" : {
       "localizations" : {
         "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cleeb"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cleeb"
@@ -38,6 +56,12 @@
             "state" : "translated",
             "value" : "Cleeb ha bisogno dei permessi di Accessibilità per poter bloccare il funzionamento della tastiera durante la pulizia.\nApri Impostazioni > Sicurezza e Privacy > Accessibilità e assicurati che Cleeb abbia i permessi di Accessibilità."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cleeb需要操作辅助功能API以便在清洁时锁定键盘。请打开系统设置>隐私与安全性>辅助功能，确认Cleeb拥有控制权限。"
+          }
         }
       }
     },
@@ -47,6 +71,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cleeb ha bisogno dei permessi di Accessibilità"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cleeb需要辅助功能权限"
           }
         }
       }
@@ -58,6 +88,12 @@
             "state" : "translated",
             "value" : "Chiudi"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭"
+          }
         }
       }
     },
@@ -67,6 +103,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Apri le Impostazioni"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开设置"
           }
         }
       }
