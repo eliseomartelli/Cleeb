@@ -19,45 +19,53 @@ struct CleebApp: App {
     @State var showAlert: Bool = false
     @State var activeAlert: ActiveAlert = .accessibility
     
+    @StateObject private var versionViewModel = VersionViewModel()
+    
     var body: some Scene {
         Window("Cleeb", id: "cleeb") {
             CleebView()
-                .onAppear {
-                    GithubVersionRepository.shared.getVersion { result in
-                        switch result {
-                        case .success(let version):
-                            let toUpdate = Bundle.main.buildVersion! != version
-                            if toUpdate {
-                                activeAlert = .update
-                                showAlert = true
-                            }
-                            return
-                        case .failure(let error):
-                            print(error)
-                            return
-                        }
-                    }
-                }
-                .alert(isPresented: $showAlert) {
-                    switch activeAlert {
-                    case .accessibility:
-                        return accessibilityAlert()
-                    case .update:
-                        return updateAlert()
-                    }
-                }
+                .environmentObject(versionViewModel)
+                .onAppear(perform: checkForUpdate)
+                .alert(isPresented: $showAlert, content: activeAlertContent)
                 .checkAccessibility(interval: 1, isPermitted: $isPermitted)
                 .onChange(of: isPermitted) {
-                    showAlert = !isPermitted && !showAlert
-                    if showAlert {
-                        activeAlert = .accessibility
-                    }
+                    handleAccessibilityChange()
+                }
+                .onChange(of: versionViewModel.latestVersion) {
+                    checkForUpdate()
                 }
         }
         .windowResizability(.contentSize)
     }
     
-    let accessibilityAlert: () -> Alert = {
+    // MARK: - Methods
+    
+    private func checkForUpdate() {
+        if Bundle.main.buildVersion! != versionViewModel.latestVersion {
+            activeAlert = .update
+            showAlert = true
+        }
+    }
+    
+    private func activeAlertContent() -> Alert {
+        switch activeAlert {
+        case .accessibility:
+            return accessibilityAlert()
+        case .update:
+            return updateAlert()
+        }
+    }
+    
+    
+    private func handleAccessibilityChange() {
+        showAlert = !isPermitted && !showAlert
+        if showAlert {
+            activeAlert = .accessibility
+        }
+    }
+    
+    
+    private let accessibilityAlert: () -> Alert = {
         Alert(
             title: Text("Cleeb requires Accessibility Permissions"),
             message: Text("""
@@ -75,12 +83,17 @@ sure Cleeb has Accessibility Permissions.
         )
     }
     
-    let updateAlert: () -> Alert = {
-        Alert(title: Text("Cleeb is out of date"), message: Text("Please update Cleeb to the latest version."), primaryButton: Alert.Button.default(Text("Open GitHub"), action: {
-            // Open github releases url
-            let url = URL(string: "https://github.com/eliseomartelli/Cleeb/releases")!
-            // Open the url
-            NSWorkspace.shared.open(url)
-        }), secondaryButton: Alert.Button.cancel(Text("Dismiss")))
+    private let updateAlert: () -> Alert = {
+        Alert(
+            title: Text("Cleeb is out of date"),
+            message: Text("Please update Cleeb to the latest version."),
+            primaryButton: Alert.Button.default(
+                Text("Open GitHub"),
+                action: {
+                    let url = URL(string: "https://github.com/eliseomartelli/Cleeb/releases")!
+                    NSWorkspace.shared.open(url)
+                }),
+            secondaryButton: Alert.Button.cancel(Text("Dismiss"))
+        )
     }
 }

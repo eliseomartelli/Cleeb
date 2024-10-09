@@ -14,6 +14,7 @@
 		557A12142C7788D00095CA14 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 557A12132C7788D00095CA14 /* Localizable.xcstrings */; };
 		557F050D2C72448D002170E7 /* PreventSleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F050C2C72448D002170E7 /* PreventSleep.swift */; };
 		55965D622CB6B01000AB6BAE /* Bundle+buildVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55965D612CB6B01000AB6BAE /* Bundle+buildVersion.swift */; };
+		55965D6E2CB6D6C600AB6BAE /* VersionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55965D6D2CB6D6C600AB6BAE /* VersionViewModel.swift */; };
 		55C966492C737F8C0025B157 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 55C966482C737F8C0025B157 /* Credits.rtf */; };
 		55FA934D2C6FE9C70037AC12 /* CleebApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA934C2C6FE9C70037AC12 /* CleebApp.swift */; };
 		55FA934F2C6FE9C70037AC12 /* CleebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA934E2C6FE9C70037AC12 /* CleebView.swift */; };
@@ -31,6 +32,7 @@
 		557A12132C7788D00095CA14 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		557F050C2C72448D002170E7 /* PreventSleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventSleep.swift; sourceTree = "<group>"; };
 		55965D612CB6B01000AB6BAE /* Bundle+buildVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+buildVersion.swift"; sourceTree = "<group>"; };
+		55965D6D2CB6D6C600AB6BAE /* VersionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionViewModel.swift; sourceTree = "<group>"; };
 		55C966482C737F8C0025B157 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		55FA93492C6FE9C70037AC12 /* Cleeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cleeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FA934C2C6FE9C70037AC12 /* CleebApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleebApp.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				55FA934C2C6FE9C70037AC12 /* CleebApp.swift */,
 				557A12132C7788D00095CA14 /* Localizable.xcstrings */,
 				55FA934E2C6FE9C70037AC12 /* CleebView.swift */,
+				55965D6D2CB6D6C600AB6BAE /* VersionViewModel.swift */,
 				55FA935B2C6FE9E50037AC12 /* CleebViewModel.swift */,
 				557F050C2C72448D002170E7 /* PreventSleep.swift */,
 				55FA93502C6FE9C70037AC12 /* Assets.xcassets */,
@@ -218,6 +221,7 @@
 				55FA934D2C6FE9C70037AC12 /* CleebApp.swift in Sources */,
 				5530D4962C72312B0012AAFB /* EventListener.swift in Sources */,
 				5530D4932C722F480012AAFB /* AccessibilityUtils.swift in Sources */,
+				55965D6E2CB6D6C600AB6BAE /* VersionViewModel.swift in Sources */,
 				554403F22C71DAED00CFF00D /* View+alwaysOnTop.swift in Sources */,
 				55FA935E2C6FEA580037AC12 /* View+checkAccessibility.swift in Sources */,
 				55965D622CB6B01000AB6BAE /* Bundle+buildVersion.swift in Sources */,

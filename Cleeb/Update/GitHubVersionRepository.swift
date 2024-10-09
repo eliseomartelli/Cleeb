@@ -13,6 +13,7 @@ struct GithubVersion: Decodable {
 
 enum GithubVersionRepositoryError: Error {
     case noData
+    case noVersionFound
 }
 
 let GITHUB_API_URL: URL = URL(string: "https://api.github.com/repos/")!
@@ -23,18 +24,22 @@ struct GithubVersionRepository {
     func getVersion(completion: @escaping (Result<String, any Error>) -> Void) {
         URLSession.shared.dataTask(with: getReleasesUrl(repoUrl: "eliseomartelli/Cleeb")) {
             data, response, error in
-            if error != nil {
-                completion(.failure(error!))
+            if let error = error {
+                completion(.failure(error))
                 return
             }
+            
             guard data != nil else {
                 completion(.failure(GithubVersionRepositoryError.noData))
                 return
             }
+            
             do {
-                let json = try JSONDecoder().decode([GithubVersion].self, from: data!)
-                // Get the latest version from json
-                let latestVersion = json.first!
+                let versions = try JSONDecoder().decode([GithubVersion].self, from: data!)
+                guard let latestVersion = versions.first else {
+                    completion(.failure(GithubVersionRepositoryError.noVersionFound))
+                    return
+                }
                 completion(.success(latestVersion.name))
                 return
             } catch {
