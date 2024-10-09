@@ -61,7 +61,9 @@ public struct AccessibilityCheckModifier: ViewModifier {
     
     init(interval: TimeInterval, isPermitted: Binding<Bool>) {
         self.timer = Timer.publish(
-            every: interval, on: .current, in: .common
+            every: interval,
+            on: .current,
+            in: .common
         ).autoconnect()
         self._isPermitted = isPermitted
     }

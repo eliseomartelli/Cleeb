@@ -40,6 +40,7 @@ preventing you from typing anything until it is turned off.
     CleebView()
         .environment(\.locale, .init(identifier: "it"))
 }
+
 #Preview() {
     CleebView()
 }
