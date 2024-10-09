@@ -21,7 +21,7 @@ struct GithubVersionRepository {
     static let shared = GithubVersionRepository()
     
     func getVersion(completion: @escaping (Result<String, any Error>) -> Void) {
-        URLSession.shared.dataTask(with: getRepoUrl(repoUrl: "eliseomartelli/Cleeb")) {
+        URLSession.shared.dataTask(with: getReleasesUrl(repoUrl: "eliseomartelli/Cleeb")) {
             data, response, error in
             if error != nil {
                 completion(.failure(error!))
@@ -44,10 +44,10 @@ struct GithubVersionRepository {
         }.resume()
     }
     
-    // Obtains the repo URL endpoint for tags
-    private func getRepoUrl(repoUrl : String) -> URL {
+    // Obtains the repo URL endpoint for releases.
+    private func getReleasesUrl(repoUrl : String) -> URL {
         return GITHUB_API_URL
             .appendingPathComponent(repoUrl)
-            .appendingPathComponent("tags")
+            .appendingPathComponent("releases")
     }
 }
