@@ -8,18 +8,50 @@
 import SwiftUI
 import AppKit
 
+enum ActiveAlert {
+    case accessibility
+    case update
+}
+
 @main
 struct CleebApp: App {
     @State var isPermitted: Bool = true
     @State var showAlert: Bool = false
+    @State var activeAlert: ActiveAlert = .accessibility
     
     var body: some Scene {
         Window("Cleeb", id: "cleeb") {
             CleebView()
-                .alert(isPresented: $showAlert, content: accessibilityAlert)
+                .onAppear {
+                    GithubVersionRepository.shared.getVersion { result in
+                        switch result {
+                        case .success(let version):
+                            let toUpdate = Bundle.main.buildVersion! != version
+                            if toUpdate {
+                                activeAlert = .update
+                                showAlert = true
+                            }
+                            return
+                        case .failure(let error):
+                            print(error)
+                            return
+                        }
+                    }
+                }
+                .alert(isPresented: $showAlert) {
+                    switch activeAlert {
+                    case .accessibility:
+                        return accessibilityAlert()
+                    case .update:
+                        return updateAlert()
+                    }
+                }
                 .checkAccessibility(interval: 1, isPermitted: $isPermitted)
                 .onChange(of: isPermitted) {
                     showAlert = !isPermitted && !showAlert
+                    if showAlert {
+                        activeAlert = .accessibility
+                    }
                 }
         }
         .windowResizability(.contentSize)
@@ -41,5 +73,14 @@ sure Cleeb has Accessibility Permissions.
                 }),
             secondaryButton: Alert.Button.cancel(Text("Dismiss"))
         )
+    }
+    
+    let updateAlert: () -> Alert = {
+        Alert(title: Text("Cleeb is out of date"), message: Text("Please update Cleeb to the latest version."), primaryButton: Alert.Button.default(Text("Open GitHub"), action: {
+            // Open github releases url
+            let url = URL(string: "https://github.com/eliseomartelli/Cleeb/releases")!
+            // Open the url
+            NSWorkspace.shared.open(url)
+        }), secondaryButton: Alert.Button.cancel(Text("Dismiss")))
     }
 }

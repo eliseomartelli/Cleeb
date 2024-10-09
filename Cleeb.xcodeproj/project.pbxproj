@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		554403F42C7228D600CFF00D /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554403F32C7228D600CFF00D /* Accessibility.swift */; };
 		557A12142C7788D00095CA14 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 557A12132C7788D00095CA14 /* Localizable.xcstrings */; };
 		557F050D2C72448D002170E7 /* PreventSleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F050C2C72448D002170E7 /* PreventSleep.swift */; };
+		55965D622CB6B01000AB6BAE /* Bundle+buildVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55965D612CB6B01000AB6BAE /* Bundle+buildVersion.swift */; };
 		55C966492C737F8C0025B157 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 55C966482C737F8C0025B157 /* Credits.rtf */; };
 		55FA934D2C6FE9C70037AC12 /* CleebApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA934C2C6FE9C70037AC12 /* CleebApp.swift */; };
 		55FA934F2C6FE9C70037AC12 /* CleebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA934E2C6FE9C70037AC12 /* CleebView.swift */; };
@@ -29,6 +30,7 @@
 		554403F32C7228D600CFF00D /* Accessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessibility.swift; sourceTree = "<group>"; };
 		557A12132C7788D00095CA14 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		557F050C2C72448D002170E7 /* PreventSleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventSleep.swift; sourceTree = "<group>"; };
+		55965D612CB6B01000AB6BAE /* Bundle+buildVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+buildVersion.swift"; sourceTree = "<group>"; };
 		55C966482C737F8C0025B157 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		55FA93492C6FE9C70037AC12 /* Cleeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cleeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FA934C2C6FE9C70037AC12 /* CleebApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleebApp.swift; sourceTree = "<group>"; };
@@ -39,6 +41,10 @@
 		55FA935B2C6FE9E50037AC12 /* CleebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleebViewModel.swift; sourceTree = "<group>"; };
 		55FA935D2C6FEA580037AC12 /* View+checkAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+checkAccessibility.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		55965D662CB6B09A00AB6BAE /* Update */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Update; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		55FA93462C6FE9C70037AC12 /* Frameworks */ = {
@@ -69,6 +75,22 @@
 			path = Accessibility;
 			sourceTree = "<group>";
 		};
+		55965D602CB6AFFB00AB6BAE /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				55965D612CB6B01000AB6BAE /* Bundle+buildVersion.swift */,
+			);
+			path = Bundle;
+			sourceTree = "<group>";
+		};
+		55965D652CB6B07D00AB6BAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				554403F12C71DAED00CFF00D /* View+alwaysOnTop.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		55FA93402C6FE9C70037AC12 = {
 			isa = PBXGroup;
 			children = (
@@ -88,8 +110,10 @@
 		55FA934B2C6FE9C70037AC12 /* Cleeb */ = {
 			isa = PBXGroup;
 			children = (
+				55965D662CB6B09A00AB6BAE /* Update */,
+				55965D652CB6B07D00AB6BAE /* View */,
+				55965D602CB6AFFB00AB6BAE /* Bundle */,
 				55C966482C737F8C0025B157 /* Credits.rtf */,
-				554403F12C71DAED00CFF00D /* View+alwaysOnTop.swift */,
 				5530D4942C7231060012AAFB /* Event */,
 				554403F72C722EDE00CFF00D /* Accessibility */,
 				55FA934C2C6FE9C70037AC12 /* CleebApp.swift */,
@@ -127,6 +151,9 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				55965D662CB6B09A00AB6BAE /* Update */,
+			);
 			name = Cleeb;
 			productName = Cleeb;
 			productReference = 55FA93492C6FE9C70037AC12 /* Cleeb.app */;
@@ -140,7 +167,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					55FA93482C6FE9C70037AC12 = {
 						CreatedOnToolsVersion = 15.4;
@@ -193,6 +220,7 @@
 				5530D4932C722F480012AAFB /* AccessibilityUtils.swift in Sources */,
 				554403F22C71DAED00CFF00D /* View+alwaysOnTop.swift in Sources */,
 				55FA935E2C6FEA580037AC12 /* View+checkAccessibility.swift in Sources */,
+				55965D622CB6B01000AB6BAE /* Bundle+buildVersion.swift in Sources */,
 				55FA935C2C6FE9E50037AC12 /* CleebViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +233,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -234,6 +263,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -268,6 +298,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -297,6 +328,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -328,6 +360,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Cleeb/Preview Content\"";
 				DEVELOPMENT_TEAM = B2VB6XBSPA;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -357,6 +390,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Cleeb/Preview Content\"";
 				DEVELOPMENT_TEAM = B2VB6XBSPA;
 				ENABLE_HARDENED_RUNTIME = YES;

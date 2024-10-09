@@ -49,6 +49,16 @@
         }
       }
     },
+    "Cleeb is out of date" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cleeb non è aggiornato"
+          }
+        }
+      }
+    },
     "Cleeb needs to access Accessibility API in order to lock the keyboard while cleaning.\nPlease open System Preferences > Security & Privacy > Accessibility and make sure Cleeb has Accessibility Permissions." : {
       "localizations" : {
         "it" : {
@@ -97,6 +107,16 @@
         }
       }
     },
+    "Open GitHub" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri GitHub"
+          }
+        }
+      }
+    },
     "Open Settings" : {
       "localizations" : {
         "it" : {
@@ -109,6 +129,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "打开设置"
+          }
+        }
+      }
+    },
+    "Please update Cleeb to the latest version." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiorna Cleeb all’ultima versione."
           }
         }
       }
