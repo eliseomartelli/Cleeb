@@ -3,6 +3,12 @@
   "strings" : {
     "Cleaning mode" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reinigungsmodus"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19,6 +25,12 @@
     },
     "Cleaning mode disables all keyboard input, preventing you from typing anything until it is turned off." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Reinigungsmodus deaktiviert alle Tastatureingaben, sodass nichts eingegeben werden kann, bis er deaktiviert wird."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -35,6 +47,12 @@
     },
     "Cleeb" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cleeb"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -51,16 +69,34 @@
     },
     "Cleeb is out of date" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cleeb ist veraltet"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cleeb non è aggiornato"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cleeb 已过期"
           }
         }
       }
     },
     "Cleeb needs to access Accessibility API in order to lock the keyboard while cleaning.\nPlease open System Preferences > Security & Privacy > Accessibility and make sure Cleeb has Accessibility Permissions." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cleeb benötigt Zugriff auf die Bedienungshilfen-API, um die Tastatur während der Reinigung zu sperren.\\nÖffne Systemeinstellungen > Sicherheit & Datenschutz > Bedienungshilfen und stelle sicher, dass Cleeb die erforderlichen Berechtigungen hat."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -77,6 +113,12 @@
     },
     "Cleeb requires Accessibility Permissions" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cleeb benötigt Bedienungshilfen-Berechtigungen"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -93,6 +135,12 @@
     },
     "Dismiss" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schließen"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -109,16 +157,34 @@
     },
     "Open GitHub" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub öffnen"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Apri GitHub"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开 GitHub"
           }
         }
       }
     },
     "Open Settings" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellungen öffnen"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -135,10 +201,22 @@
     },
     "Please update Cleeb to the latest version." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitte aktualisiere Cleeb auf die neueste Version."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiorna Cleeb all’ultima versione."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请将 Cleeb 更新至最新版本。"
           }
         }
       }
